@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"skipped","Wed Sep 20 22:48:23 GMT 2023","Wed Sep 20 22:48:23 GMT 2023","0","tests","Test Main Page","TestMainPage","","","test_fill_form",""
+"broken","Wed Sep 20 22:48:23 GMT 2023","Wed Sep 20 22:48:23 GMT 2023","0","tests","Test Main Page","TestMainPage","","","test_just_open",""
+"skipped","Wed Sep 20 22:48:23 GMT 2023","Wed Sep 20 22:48:23 GMT 2023","0","tests","Test Main Page","TestMainPage","","","test_create_sms",""
