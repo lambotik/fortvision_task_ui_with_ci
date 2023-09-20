@@ -13,7 +13,7 @@ def driver():
     options.add_argument('--headless')
     service = ChromeService(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service, options=options)
-    driver.implicitly_wait(10)
+    driver.implicitly_wait(5)
     yield driver
     attach = driver.get_screenshot_as_png()
     allure.attach(attach, name=f"Screenshot {datetime.today()}", attachment_type=allure.attachment_type.PNG)
