@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Thu Sep 21 19:08:52 GMT 2023","Thu Sep 21 19:08:52 GMT 2023","0","tests","test_main_page","TestMainPageV2","","","test_check_sms_button",""
+"passed","Thu Sep 21 19:08:20 GMT 2023","Thu Sep 21 19:08:23 GMT 2023","2894","tests","Test Main Page","TestMainPage","","","Authorization customer",""
+"skipped","Thu Sep 21 19:08:24 GMT 2023","Thu Sep 21 19:08:37 GMT 2023","12604","tests","Test Main Page","TestMainPage","","","test_fill_form",""
+"broken","Thu Sep 21 19:08:53 GMT 2023","Thu Sep 21 19:08:53 GMT 2023","0","tests","test_main_page","TestMainPageV2","","","test_check_campaning_button",""
+"skipped","Thu Sep 21 19:08:38 GMT 2023","Thu Sep 21 19:08:50 GMT 2023","12113","tests","Test Main Page","TestMainPage","","","test_create_sms",""
+"broken","Thu Sep 21 19:08:51 GMT 2023","Thu Sep 21 19:08:51 GMT 2023","0","tests","test_main_page","TestMainPageV2","","","Authorization customer",""
