@@ -1,9 +1,9 @@
 # fortvision task
-Before running the test, you must enter your test data in the file [user_data.py](https://github.com/lambotik/forvision1/blob/main/data/user_data.py):
+Before running the test, you must create file ```.env``` in tests folder and enter your test data in the file :
 
-email = your_email
+EMAIL = 'your_email'
 
-password = your password
+PASSWORD = 'your password'
 
 After this, you can run txts in github actions or on your computer using the following commands:
 
