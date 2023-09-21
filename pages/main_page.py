@@ -1,11 +1,12 @@
-import time
-
-from pages.base_page import BasePage
-from locators.main_page_locators import MainPageLocators
-from selenium.webdriver import Keys
 import random
+import time
 from string import ascii_letters
+
 import allure
+from selenium.webdriver import Keys
+
+from locators.main_page_locators import MainPageLocators
+from pages.base_page import BasePage
 from tests.user_data import EMAIL, PASSWORD
 
 
@@ -23,7 +24,7 @@ class MainPage(BasePage):
             good_evening_text = self.element_is_presence(self.locators.GOOD_EVENING_TEXT).text
         return good_evening_text
 
-    def create_SMS(self):
+    def create_sms(self):
         sms_button = self.element_is_presence(self.locators.SMS_BUTTON)
         with allure.step(f'Click SMS button.'):
             sms_button.click()
@@ -117,8 +118,14 @@ class MainPage(BasePage):
             self.go_to_element(publish_button)
             publish_button.click()
         with allure.step(f'Check that Success mesage is presence.'):
-            succes = self.element_is_visible(self.locators.SUCCESS_MESSAGE)
+            success = self.element_is_visible(self.locators.SUCCESS_MESSAGE)
         with allure.step(f'Click Done.'):
             self.element_is_clickable(self.locators.FINISH_DONE).click()
-        print(succes.text)
-        return succes.text
+        return success.text
+
+    def check_sms_button(self):
+        self.element_is_clickable(self.locators.SMS_BUTTON).click()
+        return self.element_is_clickable(self.locators.SMS_BUTTON).text
+
+    def check_create_campaning_button(self):
+        return self.element_is_clickable(self.locators.CREATE_CAMPANING_BUTTON).text
